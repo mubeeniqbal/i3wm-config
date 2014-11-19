@@ -223,12 +223,12 @@ exec --no-startup-id feh --bg-fill /usr/share/archlinux/wallpaper/archlinux-trib
 set $mode_system    (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (shift+s) shutdown, (esc) cancel
 
 mode "$mode_system" {
-        bindsym l exec --no-startup-id ~/.i3/i3exit lock, mode "default"
-        bindsym e exec --no-startup-id ~/.i3/i3exit logout, mode "default"
-        bindsym s exec --no-startup-id ~/.i3/i3exit suspend, mode "default"
-        bindsym h exec --no-startup-id ~/.i3/i3exit hibernate, mode "default"
-        bindsym r exec --no-startup-id ~/.i3/i3exit reboot, mode "default"
-        bindsym Shift+s exec --no-startup-id ~/.i3/i3exit shutdown, mode "default"
+        bindsym l exec --no-startup-id ~/.scripts/i3exit lock, mode "default"
+        bindsym e exec --no-startup-id ~/.scripts/i3exit logout, mode "default"
+        bindsym s exec --no-startup-id ~/.scripts/i3exit suspend, mode "default"
+        bindsym h exec --no-startup-id ~/.scripts/i3exit hibernate, mode "default"
+        bindsym r exec --no-startup-id ~/.scripts/i3exit reboot, mode "default"
+        bindsym Shift+s exec --no-startup-id ~/.scripts/i3exit shutdown, mode "default"
         
         # back to normal: Enter or Esc
         bindsym Escape mode "default"
